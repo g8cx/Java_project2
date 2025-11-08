@@ -1,0 +1,7 @@
+<resources>
+    <string name="balance">Баланс</string>
+    <string name="income_hint">Введите доход</string>
+    <string name="add_income">Добавить доход</string>
+    <string name="expense_hint">Введите расход</string>
+    <string name="add_expense">Добавить расход</string>
+</resources>
