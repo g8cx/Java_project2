@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F8F9FA">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Мои подписки"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#2D3748"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Общая стоимость -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/total_background"
+        android:padding="20dp"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Расходы в месяц"
+            android:textSize="16sp"
+            android:textColor="#718096"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/totalMonthlyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 ₽"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#2D3748"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <!-- Форма добавления -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/form_background"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Добавить подписку"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2D3748"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Название подписки"
+            android:textSize="16sp"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/priceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Стоимость в месяц"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="12dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/addSubscriptionButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Добавить"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4299E1"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Список подписок -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Активные подписки"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#2D3748"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:id="@+id/subscriptionsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"/>
+
+</LinearLayout>
