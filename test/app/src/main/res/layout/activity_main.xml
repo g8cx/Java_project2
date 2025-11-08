@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Баланс: 0"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:paddingBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/incomeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите доход"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"/>
+
+    <Button
+        android:id="@+id/addIncomeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить доход"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/expenseCategorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/expenseEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите расход"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/addExpenseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить расход"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/budgetRemainingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Остаток бюджета: 0"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:paddingTop="24dp"/>
+</LinearLayout>
